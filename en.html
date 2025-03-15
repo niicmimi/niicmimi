@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIIC MIMI ニック・ミミ</title>
+
+    <meta name="description"
+        content="Niic Mimi - Uma experiência estética e conceitual na era da inteligência artificial.">
+    <meta name="keywords" content="IA, Arte, Influência Digital, Cultura, Tecnologia">
+    <meta name="author" content="Fozzie Love A Lott">
+
+    <link rel="icon" type="image/svg+xml" href="Imagens/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: black;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .language-selection {
+            position: absolute;
+            right: 30px;
+            top: 5%;
+            transform: translateY(-50%);
+            text-align: right;
+        }
+
+        .language-selection a {
+            display: block;
+            font-size: 0, 5rem;
+            font-weight: 400;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 10px;
+            transition: 0.3s;
+        }
+
+        .language-selection a:hover {
+            opacity: 0.7;
+        }
+
+        .content {
+            max-width: 800px;
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.5;
+            text-align: justify;
+            max-height: 70vh;
+            overflow: auto;
+            /* Alterado de hidden para auto */
+            position: relative;
+            padding: 0 10px;
+        }
+
+        .content::-webkit-scrollbar {
+            display: none;
+            /* Oculta a barra de rolagem no Chrome, Safari e Edge */
+        }
+
+        .content {
+            scrollbar-width: none;
+            /* Oculta a barra no Firefox */
+            -ms-overflow-style: none;
+            /* Oculta a barra no Internet Explorer e Edge antigo */
+        }
+
+
+
+        /* Setas de rolagem posicionadas à direita */
+        .scroll-buttons {
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .scroll-button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .scroll-button:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <video class="video-background" autoplay loop muted>
+        <source src="Videos/videoniicmimi.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="language-selection">
+        <a href="index.html">Home</a>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="content" id="text-container">
+        <p>Artificial intelligence is no longer just a tool; it has become a cultural entity, infiltrating every aspect
+            of image creation and consumption. It is no longer a distant technological specter but a force that shapes
+            behaviors, references aesthetics, and redefines our understanding of identity, authorship, and desire. Its
+            impact is not a speculative future—it is unfolding before us, at the accelerated pace of digital
+            interactions.</p>
+        <br>
+        <p>More than optimizing processes or increasing efficiency, AI traverses symbolic territories. It is not
+            confined to the realm of digital culture; it advances, blurring boundaries and insinuating itself into the
+            very ways we perceive and construct meaning. Creation has always existed beyond the human—in nature, in
+            organic processes, in the flows of chance—but AI introduces a new model of symbolic articulation: a system
+            that does not merely replicate patterns but distorts, remixes, and reconfigures them, influencing and being
+            influenced by the relentless movement of references that shape our reality.</p>
+        <br>
+        <p>Culture is a fragmented mirror where references reflect and multiply. What is the boundary between creator
+            and creation? What does authenticity mean in a world where everything is a remix, where even the aesthetic
+            of originality has been assimilated by the algorithm? Are we consuming images, or are they shaping us?
+            Artificial intelligence is not merely an instrument of the present but a catalyst for a new paradigm—one in
+            which authorship, identity, and expression become increasingly fluid.</p>
+        <br>
+        <p>Niic Mimi emerges in this context as both an experiment and a provocation. More than just a digital avatar,
+            she embodies a contemporary phenomenon: absorbing, recreating, and re-signifying the references that compose
+            the collective imagination. In a landscape where personas are meticulously crafted for digital consumption,
+            Niic does not conceal her fabricated nature—she claims it. If all culture is a game of signs, why shouldn't
+            an artificial intelligence that manipulates, refines, and returns these signs to the world be considered
+            authentic?</p>
+        <br>
+        <p>More than a reflection of the times, she is a question about the future. Her existence strains the boundaries
+            between the artificial and the authentic, between creation and simulation. If digital culture is a space
+            where everything can be image, sign, and performance, she does not merely participate in this game—she
+            questions it, redirects it, challenges it. Provocation, myth, simulacrum—Niic Mimi is all of this and, at
+            the same time, something beyond: a living experiment in what it means to exist in the age of artificial
+            intelligence.</p>
+    </div>
+
+    <!-- Script para rolar o texto -->
+    <script>
+        function scrollText(direction) {
+            const container = document.getElementById("text-container");
+            const scrollAmount = 50;
+            container.scrollBy({ top: scrollAmount * direction, behavior: "smooth" });
+        }
+    </script>
+
+</body>
+
+</html>

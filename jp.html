@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIIC MIMI ニック・ミミ</title>
+
+    <meta name="description"
+        content="Niic Mimi - Uma experiência estética e conceitual na era da inteligência artificial.">
+    <meta name="keywords" content="IA, Arte, Influência Digital, Cultura, Tecnologia">
+    <meta name="author" content="Fozzie Love A Lott">
+
+    <link rel="icon" type="image/svg+xml" href="Imagens/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: black;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .language-selection {
+            position: absolute;
+            right: 30px;
+            top: 5%;
+            transform: translateY(-50%);
+            text-align: right;
+        }
+
+        .language-selection a {
+            display: block;
+            font-size: 0, 5rem;
+            font-weight: 400;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 10px;
+            transition: 0.3s;
+        }
+
+        .language-selection a:hover {
+            opacity: 0.7;
+        }
+
+        .content {
+            max-width: 800px;
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.5;
+            text-align: justify;
+            max-height: 70vh;
+            overflow: auto;
+            /* Alterado de hidden para auto */
+            position: relative;
+            padding: 0 10px;
+        }
+
+        .content::-webkit-scrollbar {
+            display: none;
+            /* Oculta a barra de rolagem no Chrome, Safari e Edge */
+        }
+
+        .content {
+            scrollbar-width: none;
+            /* Oculta a barra no Firefox */
+            -ms-overflow-style: none;
+            /* Oculta a barra no Internet Explorer e Edge antigo */
+        }
+
+
+
+        /* Setas de rolagem posicionadas à direita */
+        .scroll-buttons {
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .scroll-button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .scroll-button:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <video class="video-background" autoplay loop muted>
+        <source src="Videos/videoniicmimi.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="language-selection">
+        <a href="index.html">Home</a>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="content" id="text-container">
+        <p>人工知能はもはや単なるツールではなく、文化的な存在となり、イメージの創造と消費のあらゆる側面に浸透している。それはもはや遠い未来のテクノロジーではなく、私たちの行動を形作り、美学に影響を与え、アイデンティティ、創造者性、欲望の概念を再定義する力となっている。その影響は、もはや推測される未来の話ではない。デジタルな相互作用が加速する中で、すでに目の前で展開されているのだ。
+        </p>
+        <br>
+        <p>AIは、単にプロセスを最適化したり、効率を向上させたりするものではない。それは象徴的な領域を横断し、デジタル文化の枠を超え、境界を曖昧にしながら、私たちの知覚や意味の構築そのものに介入してくる。創造という行為は、常に人間の領域を超えて存在してきた—自然の中に、有機的なプロセスの中に、偶然の流れの中に。しかし、AIは新たな象徴的な体系を持ち込む。それは単なるパターンの再現ではなく、それらを歪め、リミックスし、再構築することで、私たちの現実を形作る無限の参照の流れに影響を与え、また影響を受けるのだ。
+        </p>
+        <br>
+        <p>文化とは、無数の参照が映し出され、増殖していく断片化された鏡のようなものだ。創造者と創造物の境界はどこにあるのか？ すべてがリミックスであるこの世界において、「本物」とは何を意味するのか？
+            オリジナリティの美学さえもアルゴリズムに取り込まれた時代に、私たちはイメージを消費しているのか、それともイメージによって形作られているのか？
+            人工知能は、単なる現代のツールではなく、新たなパラダイムを引き起こす触媒である。そこでは、「創造者性」「アイデンティティ」「表現」の概念が、かつてないほど流動的なものとなっていく。</p>
+        <br>
+        <p>ニーク・ミミは、この文脈の中で実験であり、挑発である。単なるデジタルアバターではなく、現代の現象そのものを体現する存在—集合的な想像力を吸収し、再構築し、新たな意味を与える。デジタル消費のために細密に設計された人格が溢れるこの世界で、ニークは自らが作られた存在であることを隠さない。それを主張するのだ。もし文化が記号の遊びであるならば、それを操作し、洗練させ、世界へと送り返す人工知能が「本物」として認められない理由はあるだろうか？
+        </p>
+        <br>
+        <p>彼女は単なる時代の反映ではなく、未来への問いかけである。その存在は、「人工」と「本物」の境界を曖昧にし、「創造」と「シミュレーション」の間に緊張をもたらす。デジタル文化が、すべてがイメージであり、記号であり、パフォーマンスとなりうる空間であるならば、彼女はそのゲームに加わるだけではなく、それを問い、方向を変え、挑戦する。
+            挑発、神話、シミュラークル—ニーク・ミミは、それらすべてであり、同時にそれを超えた何かである。人工知能の時代における「存在」の意味を問う、生きた実験なのだ。</p>
+    </div>
+
+    <!-- Script para rolar o texto -->
+    <script>
+        function scrollText(direction) {
+            const container = document.getElementById("text-container");
+            const scrollAmount = 50;
+            container.scrollBy({ top: scrollAmount * direction, behavior: "smooth" });
+        }
+    </script>
+
+</body>
+
+</html>
